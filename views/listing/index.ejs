@@ -1,0 +1,327 @@
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+  <!-- carousel -->
+  <div class="carousel">
+    <div class="list">
+      <div class="item">
+        <img src="images/HomeImage/Home1.jpg"/>
+        <div class="content">
+          <div class="author">Welcome To ApnaBihar</div>
+          <div class="title">Discover Bihar</div>
+          <div class="des">
+            Embark on a journey through Bihar's rich heritage. Explore ancient sites, vibrant festivals, and delectable cuisines. Experience traditional crafts and warm hospitality, all in one unforgettable adventure.
+          </div>
+          <div class="button">
+            <button>Start Your Journey</button>
+          </div>            
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/HomeImage/Home4.jpg"/>
+        <div class="content">
+          <div class="author">Welcome To ApnaBihar</div>
+          <div class="title">Discover Bihar</div>
+          <div class="des">
+            Embark on a journey through Bihar's rich heritage. Explore ancient sites, vibrant festivals, and delectable cuisines. Experience traditional crafts and warm hospitality, all in one unforgettable adventure.</div>
+          <div class="button">
+            <button>Start Your Journey</button>
+          </div>            
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/HomeImage/Home3.jpg"/>
+        <div class="content">
+          <div class="author">Welcome To ApnaBihar</div>
+          <div class="title">Discover Bihar</div>
+          <div class="des">
+            Embark on a journey through Bihar's rich heritage. Explore ancient sites, vibrant festivals, and delectable cuisines. Experience traditional crafts and warm hospitality, all in one unforgettable adventure.
+          </div>
+          <div class="button">
+            <button>Start Your Journey</button>
+          </div>            
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/HomeImage/Home2.jpg"/>
+        <div class="content">
+          <div class="author">Welcome To ApnaBihar</div>
+          <div class="title">Discover Bihar</div>
+          <div class="des">
+            Embark on a journey through Bihar's rich heritage.Explore ancient sites, vibrant festivals, and delectable cuisines. Experience traditional crafts and warm hospitality, all in one unforgettable adventure.</div>
+          <div class="button">
+            <button>Start Your Journey</button>
+          </div>            
+        </div>
+      </div>
+    </div>
+
+     <!-- list thumnail -->
+     <div class="Homethumbnail">
+      <div class="item">
+          <img src="images/HomeImage/Home1.jpg">
+      </div>
+      <div class="item">
+          <img src="images/HomeImage/Home4.jpg">
+      </div>
+      <div class="item">
+          <img src="images/HomeImage/Home3.jpg">
+      </div>
+      <div class="item">
+          <img src="images/HomeImage/Home2.jpg">
+      </div>
+  </div>
+  <!-- next prev -->
+
+  <div class="Homearrows">
+      <button id="prev"><</button>
+      <button id="next">></button>
+  </div>
+  <!-- time running -->
+  <div class="time"></div>
+</div>
+<!-- about bihar -->
+<div class="about-bihar">
+  <div class="about-bihar-content">
+    <h1>Learn More About Bihar</h1>
+    <p>
+      Bihar is a rich tapestry of history and culture. The Mahabodhi Temple in Bodh Gaya and Nalanda University highlight its spiritual and intellectual heritage. Rajgir’s ruins and hot springs connect to Buddhism and Jainism. Festivals like Chhath Puja and Sonepur Mela celebrate vibrant traditions. Culinary delights like Litti Chokha and Sattu Paratha reflect its rich heritage. Discover Bihar, where every experience blends history, culture, and cuisine.
+    </p>
+      <div class="about-bihar-button">
+      <button>Know More About Bihar</button>
+      </div>
+    </div>
+  <div class="bihar-image">
+    <img src="/images/HomeImage/Aboutbihar.jpg">
+  </div>
+</div>
+
+
+<!-- explore -->
+
+<div class="explore">
+  <!-- <h1 class="explore-bihar-heading">
+    Explore the Beauty of Bihar
+  </h1> -->
+  <div class="explore-bihar-heading">
+    <h1>Explore the Beauty of Bihar</h1>
+    <a href="#">Explore More</a>
+  </div>
+  
+  <div class="beauty-bihar">
+  <div class="explore-bihar-card">
+    <img src="/images/HomeImage/ghorakatora.jpeg"/>
+    <div class="description">
+      <h3>Ghora Katora lake</h3>
+      <p>Ghora Katora Lake is a serene, scenic lake in Rajgir, surrounded by lush greenery and hills, Named for its horse-bowl shape.</p>
+    </div>
+  </div>
+
+  <div class="explore-bihar-card">
+    <img src="/images/HomeImage/adhaura.jpg"/>
+    <div class="description">
+      <h3>Karakatgarh WaterFall</h3>
+      <p>Karaltgarh Waterfall, located in Kaimur, Bihar, is a beautiful natural attraction surrounded by lush forests.</p>
+    </div>
+  </div>
+
+  <div class="explore-bihar-card">
+    <img src="/images/HomeImage/bhagalpur.jpg"/>
+    <div class="description">
+      <h3>Kahalgaon Island</h3>
+      <p>Kahalgaon Island, located in the Ganges River near Bhagalpur, Bihar, is a scenic and tranquil spot known for its lush greenery.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="explore">
+
+  <div class="explore-bihar-heading">
+    <h1> Discover the Sacred Sites of Bihar</h1>
+    <a href="#">Explore More</a>
+  </div>
+  <div class="beauty-bihar">
+
+    <a href="/apnabihar/spiritualPlaces/<%= TemplesOfBihar[0]._id %>">
+      <div class="explore-bihar-card">
+        <img src="/images/BiharTemples/MahabodhiTemple/mahabodhi-temple2.jpg"/>
+        <div class="description">
+          <h3>Mahabodhi Temple</h3>
+          <p>This UNESCO World Heritage Site marks the exact location where Siddhartha Gautama, later known as Buddha, attained enlightenment under the Bodhi Tree over 2,500 years ago.</p>
+        </div>
+      </div>
+      </a>
+
+  <a href="/apnabihar/spiritualPlaces/<%= TemplesOfBihar[6]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharTemples/JalMandir/jal-mandir3.jpg"/>
+    <div class="description">
+      <h3>Jal Mandir</h3>
+      <p>Jal Mandir, located in Pawapuri, Bihar, is a highly revered Jain temple dedicated to Lord Mahavira, the 24th Tirthankara of Jainism.</p>
+    </div>
+  </div>
+  </a>
+
+<a href="/apnabihar/spiritualPlaces/<%= TemplesOfBihar[1]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharTemples/MahavirTemple/mahavir-Temple1.jpg"/>
+    <div class="description">
+      <h3>Mahavir Temple</h3>
+      <p>Mahavir Mandir, located in Patna, Bihar, is one of the most prominent and popular temples dedicated to Lord Hanuman.</p>
+    </div>
+  </div>
+  </a>
+  </div>
+</div>
+
+<div class="explore">
+  <!-- <h1 class="explore-bihar-heading">
+    Explore Bihar's Culinary Delights
+  </h1> -->
+  <div class="explore-bihar-heading">
+    <h1>Explore Bihar's Culinary Delights</h1>
+    <a href="#">Explore More</a>
+  </div>
+  <div class="beauty-bihar">
+
+    <a href="/apnabihar/cuisines/<%= cuisines[0]._id %>">
+      <div class="explore-bihar-card">
+        <img src="/images/BiharCuisines/LittiChokha/litti-Chokha3.jpg"/>
+        <div class="description">
+          <h3>Litti Chokha</h3>
+          <p>Litti Chokha is one of the most iconic and beloved dishes from Bihar, celebrated for its rustic flavors and traditional preparation.</p>
+        </div>
+      </div>
+      </a>
+
+  <a href="/apnabihar/cuisines/<%= cuisines[3]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharCuisines/Khaja/khaja2.jpg"/>
+    <div class="description">
+      <h3>Khaja</h3>
+      <p>Khaja is a traditional sweet delicacy from Bihar, known for its flaky, crispy texture and rich, sweet flavor</p>
+    </div>
+  </div>
+  </a>
+
+<a href="/apnabihar/cuisines/<%= cuisines[1]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharCuisines/ParwalKiMithai/parwal-ki-mithai4.jpg"/>
+    <div class="description">
+      <h3>Parwal ki Mithai</h3>
+      <p>This dessert is made using parwal, a vegetable commonly used in Indian cuisine, which is transformed into a delectable sweet treat</p>
+    </div>
+  </div>
+  </a>
+  </div>
+</div>
+
+<div class="explore">
+  <!-- <h1 class="explore-bihar-heading">
+    Experience the Colorful Festivals of Bihar
+  </h1> -->
+  <div class="explore-bihar-heading">
+    <h1>  Experience the Colorful Festivals of Bihar</h1>
+    <a href="#">Explore More</a>
+  </div>
+  
+  <div class="beauty-bihar">
+
+    <a href="/apnabihar/festivals/<%= festivals[0]._id %>">
+      <div class="explore-bihar-card">
+        <img src="/images/BiharFestivals/Chhath/chhath1.jpg"/>
+        <div class="description">
+          <h3>Chhath Puja</h3>
+          <p>Chhath Puja is dedicated to the worship of the Sun God, Surya, and his wife, Usha. Celebrated with immense devotion and fervor, Chhath Puja is a four-day festival.</p>
+        </div>
+      </div>
+      </a>
+
+  <a href="/apnabihar/festivals/<%= festivals[1]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharFestivals/samaChakeva/samaChakeva1.jpg"/>
+    <div class="description">
+      <h3>Sama Chakeva</h3>
+      <p>This festival, deeply rooted in folk traditions, marks the bond between brothers and sisters and is observed with great enthusiasm and joy.</p>
+    </div>
+  </div>
+  </a>
+
+<a href="/apnabihar/festivals/<%= festivals[2]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/BiharFestivals/sonepurMela/SonepurMela1.jpg"/>
+    <div class="description">
+      <h3>Sonepur Mela</h3>
+      <p>Sonepur Mela, also known as the Harihar Kshetra Mela, is one of the largest and most famous fairs in Asia, held in Sonepur, Bihar. </p>
+    </div>
+  </div>
+  </a>
+  </div>
+</div>
+
+
+<div class="explore">
+  <!-- <h1 class="explore-bihar-heading">
+    Discover the Artistry of Bihar
+  </h1> -->
+  <div class="explore-bihar-heading">
+    <h1>  Discover the Artistry of Bihar</h1>
+    <a href="#">Explore More</a>
+  </div>
+  <div class="beauty-bihar">
+
+    <a href="/apnabihar/culturalproducts/<%= culturalProducts[0]._id %>">
+      <div class="explore-bihar-card">
+        <img src="/images/culturalProducts/MadhubaniPainting/madhubani-painting2.jpg"/>
+        <div class="description">
+          <h3>Madhubani Painting</h3>
+          <p>Madhubani Painting, also known as Mithila Painting, is a renowned folk art form that originates from the Mithila region of Bihar</p>
+        </div>
+      </div>
+      </a>
+
+  <a href="/apnabihar/culturalproducts/<%= culturalProducts[1]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/culturalProducts/SikkiGrassProducts/sikki-grass-products1.jpg"/>
+    <div class="description">
+      <h3>Sikki grass Products</h3>
+      <p>Sikki grass products are an integral part of Bihar's rich handicraft tradition. Made from the golden-hued Sikki grass found in the marshy areas of the Mithila region.</p>
+    </div>
+  </div>
+  </a>
+
+<a href="/apnabihar/culturalproducts/<%= culturalProducts[2]._id %>">
+  <div class="explore-bihar-card">
+    <img src="/images/culturalProducts/TikuliArt/Tikuli-Art2.jpg"/>
+    <div class="description">
+      <h3>Tikuli Arts</h3>
+      <p> Known for its intricate designs and brilliant use of colors, Tikuli Art reflects the rich cultural heritage of the region and has been practiced for centuries.</p>
+    </div>
+  </div>
+  </a>
+  </div>
+</div>
+
+<div class="journey-start">
+  <h1>
+    Unlock Bihar
+  </h1>
+  <div class="journey">
+  <div class="journey-img">
+    <img src="/images/HomeImage/bihar-culture.png"/>
+  </div>
+  <div class="journey-content">
+    <p> 
+      Embark on a journey to explore and embrace the cultural wonders of Bihar. Discover the beauty, history, and spirituality that define this remarkable state. Start your journey here and experience the richness of Bihar's cultural legacy firsthand.</p>
+    <button>Your Journey Start Here</button>
+  </div>
+  </div>
+
+</div>
+
+
+</body>
+

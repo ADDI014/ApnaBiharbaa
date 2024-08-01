@@ -1,0 +1,117 @@
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+  <div class="Templeslider">
+    <div class="list">
+      <div class="item active">
+        <image src="/images/categoriesImages/HinduCategorie/Banner1.jpg"/>
+        <div class="content">
+          <h2>Mahabodhi Temple</h2>
+          <p>
+            The Mahabodhi Temple is a UNESCO World Heritage site located in Bodh Gaya. It marks the location where Siddhartha Gautama, the Buddha, attained enlightenment under the Bodhi Tree.
+
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <image src="/images/categoriesImages/HinduCategorie/Banner2.jpg"/>
+        <div class="content">
+          <h2>Jal Mandir</h2>
+          <p>
+            Jal Mandir, also known as the Water Temple, is situated in Pawapuri. It is dedicated to Lord Mahavira, the 24th Tirthankara of Jainism, who attained Nirvana here. The temple is built in the middle of a lotus-filled lake.
+          </p>
+         
+        </div>
+      </div>
+      <div class="item">
+        <image src="/images/categoriesImages/HinduCategorie/Banner3.jpg"/>
+        <div class="content">
+        
+          <h2>Takht Sri Patna Sahib</h2>
+          <p>
+            Takht Sri Patna Sahib is one of the five Takhts (holy seats of authority) in Sikhism. It was built by Maharaja Ranjit Singh in remembrance of Guru Gobind Singh, the tenth Sikh Guru, who was born in Patna.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <image src="/images/categoriesImages/HinduCategorie/Banner4.jpg"/>
+        <div class="content">
+          
+          <h2>Ghats of Bihar</h2>
+          <p>
+            The Ghats of Bihar, particularly along the Ganges River in Patna, are renowned for their natural beauty and historical significance. These ghats hold immense religious importance, with daily rituals and ceremonies.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <image src="/images/categoriesImages/HinduCategorie/Banner5.jpg"/>
+        <div class="content">
+        
+          <h2>Mahavir Mandir</h2>
+          <p>
+            Mahavir Mandir, located in Patna, Bihar, is one of the most prominent temples dedicated to Lord Hanuman. It attracts millions of devotees each year and is known for its magnificent architecture and spiritual ambiance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- button arrows -->
+     <div class="arrows">
+      <button id="Templeprev">&#11207;</button>
+      <button id="Templenext">&#11208;</button>
+     </div>
+     <!-- thumbnail -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="/images/categoriesImages/HinduCategorie/Banner1.jpg"/>
+          
+        </div>
+        <div class="item">
+          <img src="/images/categoriesImages/HinduCategorie/Banner2.jpg"/>
+        
+        </div>
+
+        <div class="item">
+          <img src="/images/categoriesImages/HinduCategorie/Banner3.jpg"/>
+        </div>
+
+        <div class="item">
+          <img src="/images/categoriesImages/HinduCategorie/Banner4.jpg"/>
+        
+        </div>
+
+        <div class="item">
+          <img src="/images/categoriesImages/HinduCategorie/Banner5.jpg"/>
+         
+        </div>
+      </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="jumbotron text-center text-black">
+      <h1 class="display-4">Discover the Spiritual Heart of Bihar</h1>
+      <p class="lead">Bihar, a land steeped in spiritual heritage and religious significance, is home to a multitude of spiritual places that draw pilgrims and tourists from across the world. This region, known for its deep-rooted connection to various religions such as Hinduism, Buddhism, Jainism, and Sikhism, offers a rich tapestry of spiritual experiences. From ancient temples and stupas to serene monasteries and gurudwaras, Bihar's spiritual sites reflect the state's diverse and rich cultural legacy.</p>
+    </div>
+  </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+      <% for(let AllTemples of TemplesOfBihar) { %>
+        <a href="/apnabihar/spiritualPlaces/<%= AllTemples._id %>" class="listing-link">
+          <div class="card col">
+            <img class="card-img-top" src="<%= AllTemples.images[0].path %>" alt="Card image cap" style="height: 20rem;">
+            <div class="card-img-overlay"></div>
+            <div class="card-body">
+              <p class="card-text"><b><%= AllTemples.name %></b></p>
+            </div>
+          </div>
+        </a>
+      <% } %>
+    </div>   
+      </div>
+
+
+
+      
+</body>
+
+

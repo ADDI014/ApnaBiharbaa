@@ -1,0 +1,147 @@
+
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="card mb-4">
+                    <img src="<%= TemplesOfBihar.images[1].path; %>" class="card-img-top "  alt="Second Image" style="height: 32rem; object-fit: cover;">
+                </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-4"><%= TemplesOfBihar.name %></h1>
+                
+                <div class="card mb-3">
+                    <div class="card-header bg-success-subtle">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><%= TemplesOfBihar.description %></p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3"> 
+                    <div class="card-header bg-success-subtle">
+                        <h2>History and Significance</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><%= TemplesOfBihar.history %></p>
+                        <p><%= TemplesOfBihar.significance %></p>
+                    </div>
+                </div>
+                
+                <div class="card mb-3">
+                    <div class="card-header bg-success-subtle">
+                        <h2>Rituals and Practices</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <% TemplesOfBihar.ritualsAndPractices.forEach(function(point) { %>
+                                <li><%= point %></li>
+                              <% }) %>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header bg-success-subtle">
+                        <h2>Temple Timings</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <% TemplesOfBihar.timing.forEach(function(point) { %>
+                                <li><%= point %></li>
+                              <% }) %>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card mb-3">
+                    <div class="card-header bg-success-subtle">
+                        <h2>Conclusion</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><%= TemplesOfBihar.conclusion %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card" style="width: 18rem;">
+                            <img src="<%= TemplesOfBihar.images[1].path%>" class="card-img-top" style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src=" <%= TemplesOfBihar.images[2].path%> " class="card-img-top" style="height: 10rem; object-fit: cover;" alt="..."> 
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src=" <%= TemplesOfBihar.images[3].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                        <div class="card-wrapper container-sm d-flex   justify-content-around">
+                            <div class="card" style="width: 18rem;">
+                                <img src="<%= TemplesOfBihar.images[4].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                            </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="<%= TemplesOfBihar.images[5].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                             <img src="<%= TemplesOfBihar.images[6].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="card " style="width: 18rem;">
+                            <img src="<%= TemplesOfBihar.images[7].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+        
+                        <div class="card" style="width: 18rem;">
+                            <img src="<%= TemplesOfBihar.images[8].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+        
+        
+                        <div class="card" style="width: 18rem;">
+                            <img src="<%= TemplesOfBihar.images[9].path%>" class="card-img-top"  style="height: 10rem; object-fit: cover;" alt="...">
+                        </div>
+                    </div>
+                </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    
+
+
+
+
+
+
+</body>
+
+
