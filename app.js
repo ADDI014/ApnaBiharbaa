@@ -33,7 +33,7 @@ async function main(){
     await mongoose.connect(MONGO_URL);
 }
 
-app.get("/apnabihar", async (req, res) => {
+app.get("/", async (req, res) => {
     try {
       const TemplesOfBihar = await BiharTemples.find({});
       const culturalProducts = await CulturalProduct.find({});
@@ -164,14 +164,12 @@ app.get("/apnabihar", async (req, res) => {
 
 //new route
 
-app.get("/apnabihar/new",(req,res)=>{
-  res.render("listing/newTouristPlaces.ejs")
-})
+// app.get("/apnabihar/new",(req,res)=>{
+//   res.render("listing/newTouristPlaces.ejs")
+// })
 
 
-app.get("/",(req,res)=>{
-    res.send("Home");
-})
+
 
 
 app.listen(8080, ()=>{
