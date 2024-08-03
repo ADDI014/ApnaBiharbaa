@@ -162,6 +162,9 @@ app.get("/", async (req, res) => {
   });
 
 
+  app.get("/apnabihar",async(req, res) =>{
+    res.render("listing/AboutBihar.ejs",);
+  })
 //new route
 
 // app.get("/apnabihar/new",(req,res)=>{
